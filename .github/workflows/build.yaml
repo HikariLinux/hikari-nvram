@@ -1,0 +1,27 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install D-Bus headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y libdbus-1-dev pkg-config
+      - name: Test workspace
+        run: cargo test --workspace --all-targets --locked
+      - name: Check command names
+        run: |
+          for command in hikari-nvram hikari-bless hikari-btsync hikari-wifisync; do
+            cargo run --locked --bin "$command" -- --help
+          done
