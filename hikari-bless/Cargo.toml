@@ -1,11 +1,12 @@
 [package]
-name = "asahi-bless"
+publish = false
+name = "hikari-bless"
 version = "0.4.4"
 edition = "2021"
 license = "MIT"
 description = "A tool to select active boot partition on ARM Macs"
-homepage = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
-repository = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
+homepage = "https://github.com/HikariLinux/hikari-nvram"
+repository = "https://github.com/HikariLinux/hikari-nvram"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

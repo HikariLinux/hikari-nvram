@@ -6,5 +6,5 @@ Requisite=bluetooth.service
 [Service]
 Type=oneshot
 ExecStartPre=/usr/bin/sleep 2s
-ExecStart=/usr/bin/asahi-btsync sync
+ExecStart=/usr/bin/hikari-btsync sync
 

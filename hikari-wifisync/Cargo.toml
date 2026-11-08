@@ -1,16 +1,15 @@
 [package]
-name = "asahi-btsync"
+publish = false
+name = "hikari-wifisync"
 license = "MIT"
-version = "0.2.6"
+version = "0.2.4"
 edition = "2021"
-description = "A tool to sync Bluetooth pairing keys with macos on ARM Macs"
-homepage = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
-repository = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
 
+description = "A tool to sync Wifi passwords with macos on ARM Macs"
+homepage = "https://github.com/HikariLinux/hikari-nvram"
+repository = "https://github.com/HikariLinux/hikari-nvram"
 
 [dependencies]
-dbus = "0.9.7"
-regex = "1.11.1"
 rust-ini = "0.21"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

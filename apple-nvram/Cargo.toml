@@ -1,11 +1,12 @@
 [package]
+publish = false
 name = "apple-nvram"
 version = "0.3.2"
 edition = "2021"
 license = "MIT"
 description = "A library to parse and write apple-formatted nvram entries"
-homepage = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
-repository = "https://github.com/WhatAmISupposedToPutHere/asahi-nvram"
+homepage = "https://github.com/HikariLinux/hikari-nvram"
+repository = "https://github.com/HikariLinux/hikari-nvram"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
