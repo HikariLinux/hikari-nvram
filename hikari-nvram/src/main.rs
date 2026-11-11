@@ -58,9 +58,10 @@ fn real_main() -> Result<()> {
         )
         .get_matches();
     let default_name = "/dev/mtd/by-name/nvram".to_owned();
+    let writable = matches!(matches.subcommand_name(), Some("write" | "delete"));
     let mut file = OpenOptions::new()
         .read(true)
-        .write(true)
+        .write(writable)
         .open(matches.get_one::<String>("device").unwrap_or(&default_name))
         .unwrap();
     let mut data = Vec::new();
